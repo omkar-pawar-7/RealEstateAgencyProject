@@ -1,0 +1,388 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Playfair Display', serif;
+}
+
+/* page 1 style */
+.page1 {
+    position: relative;
+    height: 100vh;
+}
+
+.bg {
+    background-image: url("/images/1.jpeg");
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.detail {
+    position: absolute;
+    color: white;
+    top: 30%;
+    left: 5%;
+    font-size: 25px;
+}
+
+#p1 {
+    font-size: 18px;
+    margin-top: 23px;
+}
+
+.button1 {
+    position: absolute;
+    bottom: 110px;
+    left: 5%;
+    background-color: transparent;
+    padding: 10px 20px;
+    color: white;
+    border: 0.5px solid white;
+}
+
+.button1:hover {
+    border: 2px solid violet;
+}
+
+#logo {
+    position: absolute;
+    top: 30px;
+    left: 5%;
+    height: 350px;
+}
+
+
+/* Form Styles */
+.form-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for contrast */
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    display: none;
+    z-index: 1000;
+}
+
+.form-container h2 {
+    margin-bottom: 20px;
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container label {
+    margin-bottom: 10px;
+}
+
+.form-container input, .form-container textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+.form-container button {
+    padding: 10px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.form-container button:hover {
+    background-color: #45a049;
+}
+
+/* Close Button Styles */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    color: #333; /* Adjust to fit with the form color scheme */
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.close-btn:hover {
+    color: #ff0000; /* Red color on hover */
+}
+
+
+/* page 2 style */
+.page2 {
+    height: 100vh;
+    background-color: #e4e2d7;
+    padding: 20px;
+    text-align: center;
+    color: #646257;
+}
+
+#mile {
+    margin-top: 100px;
+    font-size: 50px;
+}
+
+.imgBorder {
+    border: 2px solid #ccc;
+    padding: 30px;
+}
+
+.imgs {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 70px;
+}
+
+#award {
+    margin-top: 80px;
+}
+
+/* page 3 style */
+.page3 {
+    height: 100vh;
+    text-align: center;
+    background-color: #fffef7;
+    padding: 50px 20px;
+}
+
+#p3h1 {
+    margin-top: 30px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #4d4b47;
+}
+
+.buildingImages {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin-top: 50px;
+}
+
+.property-card {
+    max-width: 300px;
+    text-align: center;
+    padding: 20px;
+}
+
+.property-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.property-card p {
+    font-size: 18px;
+    color: #4d4b47;
+}
+
+.property-card span {
+    font-weight: bold;
+    font-size: 20px;
+    color: #333;
+}
+
+@media screen and (max-width: 768px) {
+    .buildingImages {
+        flex-direction: column;
+    }
+}
+
+/* Page 4 Styles */
+.page4 {
+    height: 100vh;
+    background-color: #fffef7;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+#p4h1 {
+    font-size: 40px;
+    font-family: 'Georgia', serif;
+    color: #6f6c5e;
+    margin-bottom: 60px;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 800px;
+    gap: 40px;
+}
+
+.stat-box {
+    background-color: #fffef7;
+    border: 1px solid #646257;
+    padding: 40px;
+    width: 180px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.stat-number {
+    font-size: 32px;
+    font-weight: bold;
+    color: #6f6c5e;
+}
+
+.stat-description {
+    font-size: 18px;
+    color: #6f6c5e;
+    margin-top: 10px;
+}
+
+
+/* page 5 code  */
+.page5 {
+    height : 100vh;
+    background-color: #e4e2d7;
+    padding: 60px 40px;
+    text-align: center;
+}
+
+#testimonial-title {
+    font-size: 36px;
+    color: #646257;
+    margin-top :20px;
+    margin-bottom: 80px;
+    font-family: 'Playfair Display', serif;
+}
+
+.testimonial-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.testimonial-box {
+    background-color: #e4e2d7;
+    border: 1px solid #bfbfbf;
+    padding: 30px;
+    width: 250px;
+    min-height: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-text {
+    font-size: 16px;
+    color: #4d4b47;
+    margin-bottom: 20px;
+}
+
+.client-name {
+    font-size: 14px;
+    color: #6f6c5e;
+    font-weight: bold;
+}
+
+
+/* page 6 code  */
+/* Page 6 Styles */
+.page6 {
+    height: 100vh;
+    background-color: #504c40;
+    padding: 100px 30px;
+    color: #d2d0c6;
+    font-family: 'Playfair Display','serif';
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#foot-heading {
+    font-size: 30px;
+    margin-bottom: 70px;
+    margin-left: 30px;
+}
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    margin-left: 30px;
+    width : 55%;
+}
+
+.color-statement {
+    color :#fffef7;
+}
+
+.footer-section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.footer-section p, .footer-section a {
+    font-size: 16px;
+    color: #d2d0c6;
+    line-height: 1.6;
+    text-decoration: none;
+}
+
+.footer-social {
+    text-align: center;
+    margin-top: 40px;
+    margin-left: -1060px;
+}
+
+.footer-social h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icons img {
+    width: 40px;
+    height: 40px;
+}
+
+@media screen and (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .footer-social {
+        margin-top: 20px;
+    }
+}
+
+

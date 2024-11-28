@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silverline Estates</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/icon.png" type="image/x-icon">
+
+</head>
+<body>
+    <div class="page1">
+        <img src="/images/logo.png" alt="Silverline Estates company logo" id="logo">
+
+        <div class="bg"></div>
+        <div class="detail">
+            <h1>The best real estate<br> agency in India</h1>
+            <p id="p1">We are a full-service brokerage firm in India.<br> Our team of experts is ready to help you with<br> any questions you have.</p>
+        </div>
+        <button type="button" onclick="showForm()" class="button1">TAKE A LOOK</button>
+    </div>
+
+    <div class="form-container" id="formContainer">
+        <button type="button" class="close-btn" onclick="hideForm()">×</button>
+        <h2>Contact Us</h2>
+        <form id="contactForm" method="POST" action="contact">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mobileno">Mobile No:</label>
+            <input type="tel" id="mobileno" name="mobileno" required>
+
+            <button type="submit" id="submitBtn">Submit</button>
+        </form>
+    </div>
+
+    <div class="page2">
+        <h1 id="mile">Our milestones</h1>
+        <h2 id="award">Awards</h2>
+        <div class="imgs">
+            <img src="/images/m1.png" alt="award certificate" class="imgBorder">
+            <img src="/images/m2.png" alt="award certificate" class="imgBorder">
+            <img src="/images/m3.png" alt="award certificate" class="imgBorder">
+        </div>
+    </div>
+
+    <div id="response"></div>
+
+
+    <div class="page3">
+        <h1 id="p3h1">Properties for Sale</h1>
+        <div class="buildingImages">
+            <div class="property-card">
+                <img src="/images/building1.jpg" alt="Building 1" class="property-img">
+                <p>Office building <br><span>Hyderabad</span><br>789,000000</p>
+            </div>
+            <div class="property-card">
+                <img src="/images/building2.png" alt="Building 2" class="property-img">
+                <p>Office building <br><span>Delhi</span><br>890,000000</p>
+            </div>
+            <div class="property-card">
+                <img src="/images/buiding3.png" alt="Building 3" class="property-img">
+                <p>Office building <br><span>Mumbai</span><br>910,00000</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="page4">
+        <h1 id="p4h1">Why choose <br>Silverline Estates</h1>
+        <div class="stats">
+            <div class="stat-box">
+                <p class="stat-number">23</p>
+                <p class="stat-description">Estate Agents</p>
+            </div>
+            <div class="stat-box">
+                <p class="stat-number">$5B</p>
+                <p class="stat-description">Sales since 1995</p>
+            </div>
+            <div class="stat-box">
+                <p class="stat-number">10</p>
+                <p class="stat-description">Cities served</p>
+            </div>
+            <div class="stat-box">
+                <p class="stat-number">2,000+</p>
+                <p class="stat-description">Sales transactions</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="page5">
+        <h1 id="testimonial-title">Client Testimonials</h1>
+        <div class="testimonial-container">
+            <div class="testimonial-box">
+                <p class="testimonial-text">
+                    "Working with Silverline Estates was a game-changer. Their expertise and commitment helped us secure a great deal."
+                </p>
+                <p class="client-name">– Errandco Services</p>
+            </div>
+            <div class="testimonial-box">
+                <p class="testimonial-text">
+                    "The team at Silverline goes above and beyond to make the buying process seamless. They have earned our trust for future projects. <br> Their attention to detail and prompt communication made every step of the process transparent and stress-free."
+                </p>
+                <p class="client-name">– Jeffries and Madison</p>
+            </div>
+            <div class="testimonial-box">
+                <p class="testimonial-text">
+                    "Silverline Estates was incredibly helpful and professional. I highly recommend them to anyone looking for property advice."
+                </p>
+                <p class="client-name">– Strews Inc</p>
+            </div>
+        </div>
+    </div>
+    <div class="page6">
+        <h1 id="foot-heading" class="color-statement">Silverline Estates</h1>
+        <div class="footer-content">
+            <div class="footer-section contact">
+                <h2 class="color-statement">Contact Us</h2>
+                <p>123 Mumbai St.<br>Mumbai, ST 12345</p><br>
+                <p>(123) 456-7890</p><br>
+                <p><a href="mailto:hello@reallygreatsite.com">hello@silverline.com</a></p>
+            </div>
+            <div class="footer-section hours">
+                <h2 class="color-statement">Business Hours</h2>
+                <p>Monday to Friday<br>9:00 am to 6:00 pm</p>
+                <p>Saturday<br>9:00 am to 12 noon</p><br>
+                <p>Sunday by appointment only.</p>
+            </div>
+        </div>
+        <div class="footer-social">
+            <h2>Get Social</h2>
+            <div class="social-icons">
+                <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+                <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+    
+</body>
+</html>

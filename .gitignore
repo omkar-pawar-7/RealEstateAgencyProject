@@ -1,0 +1,12 @@
+# Node.js (for frontend)
+node_modules/
+.env
+
+# Eclipse (for backend)
+.classpath
+.project
+.settings/
+
+# Operating system files
+Thumbs.db
+.DS_Store
